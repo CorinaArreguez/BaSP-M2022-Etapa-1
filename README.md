@@ -11,9 +11,8 @@ Is a web system that allows the recording of hours worked by each employee in ea
 This instructions will allow you to view the project.
 Enter into the folders:
 ```
-BASP-M2022-ETAPA-1
-    Semana-02
-        index.html
+Semana-02
+    index.html
 ```
 
 
