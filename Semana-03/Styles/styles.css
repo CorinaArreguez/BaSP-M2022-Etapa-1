@@ -183,6 +183,14 @@ header, section, footer {
     color: #373867;
 }
 
+
+
+
+
+
+
+
+
 .our-history {
     color: #373867;
 }
@@ -232,6 +240,11 @@ header, section, footer {
     font-size: 16px;
     font-weight: bold;
     color: #373867;
+}
+
+.lists ol {
+    margin-left: 15px;
+    list-style-type: decimal;
 }
 
 .lists a {
