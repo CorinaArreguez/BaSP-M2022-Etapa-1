@@ -37,11 +37,14 @@ html, body, #root {
     height: 100%;
 }
 
+
+
 .sidebar {
     position: fixed;
-    width: 25%;
+    width: 22%;
     padding-left: 10px;
 }
+
 .sidebar h3 {  
     padding-top: 15px;  
     padding-bottom: 20px;
@@ -51,22 +54,34 @@ html, body, #root {
     color: #373867;
     text-decoration: underline 3px #AACE9B;
 }
+
 .sidebar ul {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .sidebar li{
     padding-bottom: 8px;
     padding-top: 5px;  
     font-size: 12px;
     border-bottom: solid 1px #373867;
 }
+
 .sidebar a{
     text-decoration: none;
     color: #373867;
 }
+
 .sidebar p{
     padding-bottom: 10px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    color: #373867;
+}
+
+.sidebar address{
+    padding-top: 10px;
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
     color: #373867;
@@ -74,9 +89,84 @@ html, body, #root {
 
 
 
-
-header, section, hr, footer {
+header, section, footer {
     margin-right: 10px;
     margin-left: auto;
-    width: 1110px;
+    width: 75%;
+}
+
+.header {
+    padding-top: 20px;
+    color:#373867;
+    border-bottom: solid 5px #AACE9B;
+}
+
+.header h1 {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.header a {
+    position: relative;
+    left: 815px;
+    bottom: 30px;
+}
+
+
+.description {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    height: fit-content;
+    color:#373867;
+}
+
+.description div {
+    float: left;
+    width: 55%;
+}
+
+.description h2 {
+    font-size: 45px;
+    font-weight: bolder;
+    text-align: left;
+}
+
+.description h4 {
+    padding-top: 5px;
+    font-size: 25px;
+    text-align: left;
+}
+
+.description p {
+    padding-top: 5px;
+}
+
+.description button {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-color: #AACE9B;
+    color: #AACE9B;
+    background-color: white;
+
+}
+
+.description img {
+    float: right;
+    width: 45%;
+}
+
+.app-features {
+    padding-top: 20px;
+    text-align: left;
+    font-size: 16px;
+    color: #373867;
+}
+
+
+
+
+.lists {
+    column-count: 3;
+    column-gap: 50px;
 }
