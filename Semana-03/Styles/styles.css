@@ -53,30 +53,7 @@ header, section, footer {
 
 
 
-.choose-us {
-    margin-left: 350px;
-    font-family: 'Roboto', sans-serif;
-}
 
-.choose-us div {
-    padding-top: 10px;
-    padding-bottom: 15px;
-    color: #373867;
-    column-count: 4;
-    column-gap: 30px;
-    column-rule: solid 1px #373867;
-    border-bottom: #373867 1px solid;
-} 
-
-.choose-us h4 {
-    font-weight: bold;
-    font-size: 19px;
-    color: #373867;
-}
-
-.contact-form {
-    margin-left: 350px;
-}
 
 
 
