@@ -1,0 +1,39 @@
+.our-history {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 350px;
+    font-family: 'Roboto', sans-serif;
+    color: #373867;
+}
+
+.our-history h4 {
+    padding-bottom: 15px;
+    font-weight: bold;
+    font-size: 19px;
+    text-decoration: underline;
+}
+
+.our-history h5{
+    padding-bottom: 25px;
+    font-weight: bolder;    
+}
+
+.our-history p {
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+.crucial-moments1 {
+    float: right;
+    width: 75%;
+}
+
+.crucial-moments2 {
+    float: left;
+    width: 75%;
+}
+
+.our-history img:last-child {
+    float: right;
+    width: 20%;
+}

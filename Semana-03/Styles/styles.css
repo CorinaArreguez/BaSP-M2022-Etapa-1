@@ -62,43 +62,6 @@ header, section, footer {
 
 
 
-.our-history {
-    margin-left: 350px;
-    font-family: 'Roboto', sans-serif;
-    color: #373867;
-}
-
-.our-history h4 {
-    padding-bottom: 15px;
-    font-weight: bold;
-    font-size: 19px;
-    text-decoration: underline;
-}
-
-.our-history h5{
-    padding-bottom: 25px;
-    font-weight: bolder;    
-}
-
-.our-history p {
-    padding-top: 10px;
-    padding-bottom: 25px;
-}
-
-.paragraph-one {
-    float: right;
-    width: 75%;
-}
-
-.paragraph-two {
-    float: left;
-    width: 75%;
-}
-
-.image-two {
-    float: right;
-    width: 20%;
-}
 
 .lists {
     margin-left: 350px;
