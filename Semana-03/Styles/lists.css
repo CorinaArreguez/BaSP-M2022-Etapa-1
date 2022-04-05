@@ -1,0 +1,31 @@
+.lists {
+    margin-left: 350px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    column-count: 3;
+    column-gap: 50px;
+    border-top: #373867 1px solid;
+    border-bottom: #373867 1px solid;
+    font-family: 'Roboto', sans-serif;
+}
+
+.lists h4 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #373867;
+}
+
+.lists ol {
+    margin-left: 15px;
+    list-style-type: decimal;
+}
+
+.lists a {
+    text-decoration: none;
+    color: #373867;
+}
+
+.lists li {
+    font-size: 15px;
+    font-weight: bolder;
+}

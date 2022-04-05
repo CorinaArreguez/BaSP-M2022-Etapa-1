@@ -1,0 +1,41 @@
+.app-features {
+    display: in-block;
+    margin-left: 25%;
+    padding-top: 20px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #373867;
+}
+ .app-features h4 {
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 19px;
+ }
+
+ .app-features div{
+    display: inline-block;
+    width: 40%;
+ }
+
+ /*.img-container {
+    display: inline-block;
+    margin: 50px;
+    width: 94.19px;
+    height: 94.19px;
+    overflow: hidden;
+    transform: rotate(45deg);
+  }
+  .img-container img {
+    position: relative;
+    top: -25px;
+    left: -25px;
+    width: 141%;
+    height: 141%;
+    transform: rotate(-45deg);
+  }*/
+
+ .app-features img{
+    float: left;
+ }
+

@@ -10,46 +10,6 @@ header, section, footer {
 
 
 
-.app-features {
-    display: in-block;
-    margin-left: 25%;
-    padding-top: 20px;
-    text-align: left;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    color: #373867;
-}
- .app-features h4 {
-    padding-bottom: 10px;
-    font-weight: bold;
-    font-size: 19px;
- }
-
- .app-features div{
-    display: inline-block;
-    width: 40%;
- }
-
- /*.img-container {
-    display: inline-block;
-    margin: 50px;
-    width: 94.19px;
-    height: 94.19px;
-    overflow: hidden;
-    transform: rotate(45deg);
-  }
-  .img-container img {
-    position: relative;
-    top: -25px;
-    left: -25px;
-    width: 141%;
-    height: 141%;
-    transform: rotate(-45deg);
-  }*/
-
- .app-features img{
-    float: left;
- }
 
 
 
@@ -60,40 +20,6 @@ header, section, footer {
 
 
 
-
-
-
-.lists {
-    margin-left: 350px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    column-count: 3;
-    column-gap: 50px;
-    border-top: #373867 1px solid;
-    border-bottom: #373867 1px solid;
-    font-family: 'Roboto', sans-serif;
-}
-
-.lists h4 {
-    margin-bottom: 10px;
-    font-size: 22px;
-    color: #373867;
-}
-
-.lists ol {
-    margin-left: 15px;
-    list-style-type: decimal;
-}
-
-.lists a {
-    text-decoration: none;
-    color: #373867;
-}
-
-.lists li {
-    font-size: 15px;
-    font-weight: bolder;
-}
 
 footer {
     margin-left: 350px;
