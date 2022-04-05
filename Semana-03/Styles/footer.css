@@ -1,0 +1,23 @@
+footer {
+    margin-top: 50px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #373867;
+}
+
+footer a{
+    position: relative;
+    left: 400px;
+    padding: 10px;
+}
+.ciudad {
+    position: relative;
+    left: 430px;
+    padding-top: 15px;
+}
+
+.copyright {
+    position: relative;
+    left: 320px;
+    padding-top: 15px;
+}
