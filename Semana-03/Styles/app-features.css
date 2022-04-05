@@ -1,7 +1,6 @@
 .app-features {
     display: inline-block;
     margin-left: 25%;
-    margin-bottom: 30px;
     padding-top: 20px;
     text-align: left;
     font-family: 'Roboto', sans-serif;
@@ -10,15 +9,15 @@
     border-bottom: #373867 solid 1px;
 }
 .app-features h4 {
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     font-weight: bold;
     font-size: 19px;
 }
 
-.app-features div {
+/*.app-features div {
     display: inline-block;
     width: 45%;
-}
+}*/
 
 .app-features h5 {
     margin-top: 15px;

@@ -35,7 +35,7 @@
 
 .sidebar p{
     padding-top: 15px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     font-size: 12px;
     text-align: justify;
     color: #373867;
@@ -50,7 +50,6 @@
 address img {
     display: block;
     width: 10%;
-    height: 15px;
 }
 
 address a {

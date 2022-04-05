@@ -1,18 +1,25 @@
 # Trackgenix
-## Weekly practice number two resolution.
+## Weekly practice resolutions.
 
+Trackgenix is a web system that allows the recording of hours worked by each employee in each project and work team.
 
+This instructions will allow you to view the projects.
+Enter into the folders:
+```
+Semana-02
+    index.html
+Semana-03
+    Styles
+    index.html
+```
+### Semana-02
+We created an html document that has the same content as the first week's screenflow landing page and saved the progress in a public Github repository.
+
+### Semana-03
+We inclued the styles to html structure to make the page looks like the screenflow landing page and saved the progress in a public Github repository.  
+
+_By Author_
 ```
 Name: Corina Arreguez
 Email: coriarreguez@gmail.com
 ```
-It's a web system that allows the recording of hours worked by each employee in each project and work team.
-
-This instructions will allow you to view the project.
-Enter into the folder:
-```
-Semana-02
-    index.html
-```
-
-
