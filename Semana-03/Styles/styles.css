@@ -22,6 +22,7 @@ header, section, footer {
 .description div {
     float: left;
     width: 55%;
+    height: 300px;
 }
 
 .description h2 {
@@ -57,6 +58,7 @@ header, section, footer {
 .description img {
     float: right;
     width: 40%;
+    height: 270px;
     padding-right: 5px;
 }
 
