@@ -8,59 +8,7 @@ header, section, footer {
 
 
 
-.description {
-    display: inline-block;
-    margin-left: 25%;
-    padding-top: 15px;
-    padding-bottom: 20px;
-    height: fit-content;
-    font-family: 'Roboto', sans-serif;
-    color:#373867;
-    border-bottom: solid 1px #373867;
-}
 
-.description div {
-    float: left;
-    width: 55%;
-    height: 300px;
-}
-
-.description h2 {
-    font-size: 45px;
-    font-weight: bolder;
-    text-align: left;
-}
-
-.description h4 {
-    width: 500px;
-    padding-top: 9px;
-    font-size: 19px;
-    text-align: left;
-}
-
-.description p {
-    padding-top: 9px;
-    width: 450px;
-    font-size: 17px;
-}
-
-.description button {
-    margin-top: 22px;
-    margin-bottom: 15px;
-    width: 180px;
-    height: 40px;
-    border: solid 3px #AACE9B;
-    border-radius: 5px;
-    background-color: white;
-    color: #AACE9B;
-}
-
-.description img {
-    float: right;
-    width: 40%;
-    height: 270px;
-    padding-right: 5px;
-}
 
 .app-features {
     display: in-block;
