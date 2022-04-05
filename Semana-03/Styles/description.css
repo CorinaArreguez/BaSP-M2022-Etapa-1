@@ -11,7 +11,7 @@
 
 .description div {
     float: left;
-    width: 55%;
+    width: 45%;
     height: 300px;
 }
 
@@ -23,7 +23,7 @@
 
 .description h4 {
     width: 500px;
-    padding-top: 9px;
+    padding-top: 25px;
     font-size: 19px;
     text-align: left;
 }
@@ -47,7 +47,6 @@
 
 .description img {
     float: right;
-    width: 40%;
-    height: 270px;
+    width: 50%;
     padding-right: 5px;
 }

@@ -1,7 +1,7 @@
 .app-features {
     display: inline-block;
     margin-left: 25%;
-    padding-top: 20px;
+    /*padding-top: 20px;*/
     text-align: left;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -9,18 +9,31 @@
     border-bottom: #373867 solid 1px;
 }
 .app-features h4 {
-    padding-bottom: 15px;
+    padding-top: 30px;
+    padding-bottom: 0px;
     font-weight: bold;
     font-size: 19px;
 }
 
-/*.app-features div {
-    display: inline-block;
+.hour-tracking {
+    float: left;
     width: 45%;
-}*/
+}
+.multiple-roles {
+    float: right;
+    width: 45%;
+}
+.reports {
+    float: left;
+    width: 45%;
+}
+.app-features div:last-child {
+    float: right;
+    width: 45%;
+}
 
 .app-features h5 {
-    margin-top: 15px;
+    margin-top: 20px;
     margin-bottom: 15px;
     font-size: 17px;
     font-weight: bold;
@@ -49,7 +62,26 @@
     left: -100px;
 }
 
+.app-features h5 {
+    padding-left: 142px;
+    padding-top: 15px;
+}
+
+/*.hour-tracking p {
+    padding-top: 60px;
+}
 
 
+.reports p {
+    padding-top: 60px;
+}
+
+.multiple-roles p {
+    padding-top: 60px;
+}
 
 
+.app-features p:last-child {
+    padding-top: 60px;
+}
+*/

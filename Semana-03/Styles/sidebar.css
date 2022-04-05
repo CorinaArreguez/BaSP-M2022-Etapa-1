@@ -36,25 +36,27 @@
 .sidebar p{
     padding-top: 15px;
     padding-bottom: 5px;
-    font-size: 12px;
+    font-size: 14px;
     text-align: justify;
     color: #373867;
 }
 
 .sidebar address{
     padding-top: 10px;
-    font-size: 12px;
+    font-size: 13px;
     color: #373867;
 }
 
-address img {
-    display: block;
+address div:first-child {
+    float: left;
     width: 10%;
+    height: 20px;
 }
 
 address a {
     float: right;
     width: 85%;
+    padding: 7px;
 }
 
 
