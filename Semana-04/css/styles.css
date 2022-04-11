@@ -1,6 +1,6 @@
 body {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 40px;
+    margin-right: 45px;
     font-family: 'Roboto', sans-serif;
     color: #373867;
 }
@@ -8,4 +8,10 @@ body {
 body a {
     text-decoration: none;
     color: #373867;
+}
+
+main h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
 }

@@ -1,0 +1,27 @@
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .social-media { 
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+footer div:not(:first-child) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+/* footer .city {
+    display: flex;
+    justify-content: center;
+} */
+
+/* footer .copyright {
+    display: flex;
+    justify-content: center;
+} */
