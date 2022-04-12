@@ -59,8 +59,3 @@ address a {
     padding: 7px;
 }
 
-@media screen and (max-width: 1023px) {
-    nav {
-        display: none;
-    }
-}

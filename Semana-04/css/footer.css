@@ -4,9 +4,13 @@ footer {
 }
 
 footer .social-media { 
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.social-media a:not(:last-child) {
+    padding-right: 80px;
 }
 
 footer div:not(:first-child) {
@@ -16,12 +20,3 @@ footer div:not(:first-child) {
     font-size: 13px;
 }
 
-/* footer .city {
-    display: flex;
-    justify-content: center;
-} */
-
-/* footer .copyright {
-    display: flex;
-    justify-content: center;
-} */
