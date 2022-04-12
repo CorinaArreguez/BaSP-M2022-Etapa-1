@@ -36,3 +36,10 @@ header .title {
     padding-right: 35px;
     margin-bottom: 20px;
 }
+
+
+@media (min-width:1023px) {
+    .logo-container {
+        margin-left: 500px;
+    }
+}

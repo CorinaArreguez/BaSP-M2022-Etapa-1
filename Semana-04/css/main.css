@@ -161,6 +161,7 @@ main {
 
 .contact-form h4 {
     text-decoration: underline;
+    margin-bottom: 9px;
 }
 
 .contact-form input {
@@ -303,14 +304,29 @@ main {
 
 @media screen and (min-width: 760px) {
     .reasons .reason-container:nth-child(even) {
+        padding-left: 25px;
         border-left: #373867 1px solid;
         width: fit-content;
     }
 }
 
 @media (min-width:1023px) {
+    .description img {
+        width: 450px;
+    }
+    .description .text {
+        width: 550px;
+        text-align: left;
+    }
+    .text h4 {
+        text-align: left;
+    }
+    .app-features .features-container {
+        justify-content: flex-start;
+    }
     .feature-box {
-        margin-right: 20px;
+        width: 450px;
+        padding-right: 90px;
     }
     .feature-box p {
         width: 400px;
@@ -325,22 +341,30 @@ main {
     .reason-container p {
         width: 255px;
     }
+    .reasons .reason-container:nth-child(even) {
+        padding-left: 3px;
+    }
     .reason-container:nth-child(3) {
+        padding-left: 3px;
         border-left: #373867 1px solid;
         width: fit-content;
     }
     .contact-form input {
         width: 505px;
         height: 30px;
+        margin-top: 1px;
     }
     .contact-form select {
-        width: 505px;
+        width: 510px;
         height: 30px;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
     .contact-form textarea {
-        width: 1010px;
+        width: 1015px;
         height: 100px;
         margin-top: 10px;
+        margin-bottom: 10px;
     }
     .our-history h4 {
         text-align: left;
@@ -348,8 +372,21 @@ main {
     .our-history h5 {
         text-align: left;
     }
-    .our-history .begining p {
-        margin-left: 45px;
-    }    
+    .our-history p {
+        font-size: 16px;
+    }
+    .our-history .moments {
+        justify-content: space-between;
+    }
+    .our-history .crucial-moments {
+        justify-content: space-between;
+    }
+    .moments p {
+        width: 500px;
+    }
+    .crucial-moments p {
+        width: 500px;
+    }
+       
 
 }
