@@ -14,6 +14,9 @@ Semana-03
 Semana-04
     css
     index.html
+Semana-05
+    exercises
+    index.html
 ```
 ### Semana-02
 We created an html document that has the same content as the first week's screenflow landing page and saved the progress in a public Github repository.
@@ -23,6 +26,9 @@ We inclued the styles to html structure to make the page looks like the screenfl
 
 ### Semana-04
 This week we created the landing page using flexbox as the main tool to do a Responsive Design following the Mobile First concept.
+
+### Semana-05
+In the fifth week we solved javascript exercises and saved the progress in the repository.
 
 _By Author_
 ```
