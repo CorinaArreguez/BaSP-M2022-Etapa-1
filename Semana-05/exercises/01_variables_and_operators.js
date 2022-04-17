@@ -22,5 +22,5 @@ console.log ('-Exercise 1.c:');
 var word1 = 'Corina';
 var word2 = 'Arreguez';
 sumaWords = word1.length + word2.length;
-console.log ('La suma letras es: ' + sumaWords); 
+console.log ('La suma de letras es: ' + sumaWords); 
 
