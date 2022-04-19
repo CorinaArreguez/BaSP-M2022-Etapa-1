@@ -29,6 +29,7 @@ This week we created the landing page using flexbox as the main tool to do a Res
 
 ### Semana-05
 In the fifth week we solved javascript exercises and saved the progress in the repository.
+https://corinaarreguez.github.io/BaSP-M2022-Etapa-1/Semana-05/index.html
 
 _By Author_
 ```

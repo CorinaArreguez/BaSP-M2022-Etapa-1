@@ -4,14 +4,14 @@ console.log ('--EXERCISE 2: STRINGS');
 //en mayúscula (utilizar toUpperCase).
 console.log ('-Exercise 2.a:');
 var text = 'equilibrado';
-console.log ('Mayúscula: ' + text.toUpperCase());
+console.log ('Uppercase: ' + text.toUpperCase());
 
 //b. Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string
 //con los primeros 5 caracteres guardando el resultado en una nueva variable (utilizar substring).
 console.log ('-Exercise 2.b:');
 var cadena = 'portafolios';
 cadNueva = cadena.substring(0,5);
-console.log ('Nueva cadena: ' + cadNueva);
+console.log ('New string: ' + cadNueva);
 
 
 //c. Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string
@@ -19,7 +19,7 @@ console.log ('Nueva cadena: ' + cadNueva);
 console.log ('-Exercise 2.c:');
 var pal = 'bienvenida';
 palNueva = pal.substring(7);
-console.log ('Nueva palabra: ' + palNueva);
+console.log ('New word: ' + palNueva);
 
 //d. Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string
 //con la primera letra en mayúscula y las demás en minúscula. Guardar el resultado en una 
@@ -29,7 +29,7 @@ var palabra = 'helicóptero';
 primeraMay = palabra.substring(0,1).toUpperCase();
 min = palabra.substring(1).toLowerCase();
 nuevaPalabra = primeraMay + min;
-console.log ('Primera mayúscula: ' + nuevaPalabra);
+console.log ('Capital letter: ' + nuevaPalabra);
 
 
 //e. Crear una variable de tipo string con al menos 10 caracteres y algún espacio en blanco.
@@ -37,7 +37,7 @@ console.log ('Primera mayúscula: ' + nuevaPalabra);
 console.log ('-Exercise 2.e:');
 var cad = 'Proyecto semanal';
 espacioBlanco = cad.indexOf(' ');
-console.log ('Posición del primer espacio en blanco: ' + espacioBlanco);
+console.log ('The position of the first white space is: ' + espacioBlanco);
 
 
 //f. Crear una variable de tipo string con al menos 2 palabras largas (10 caracteres y algún 
