@@ -47,7 +47,7 @@ console.log ('Posición del primer espacio en blanco: ' + espacioBlanco);
 console.log ('-Exercise 2.f:');
 var cade = 'solicitaremos información';
 primerMay = cade.charAt(0).toUpperCase();
-segMay = cade.charAt(14).toUpperCase();
+segMay = cade.substring(cade.indexOf(' ') + 1, cade.indexOf(' ') + 2).toUpperCase();
 primerMin = cade.substring(1,13).toLowerCase();
 segMin = cade.substring(15).toLowerCase(); 
 cadeFinal = primerMay + primerMin + ' ' + segMay + segMin;
