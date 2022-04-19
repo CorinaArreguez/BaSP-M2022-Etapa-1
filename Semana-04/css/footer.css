@@ -10,7 +10,7 @@ footer .social-media {
 }
 
 .social-media a:not(:last-child) {
-    padding-right: 80px;
+    padding-right: 70px;
 }
 
 footer div:not(:first-child) {
@@ -20,3 +20,6 @@ footer div:not(:first-child) {
     font-size: 13px;
 }
 
+footer .city {
+    padding-top: 10px;
+}
