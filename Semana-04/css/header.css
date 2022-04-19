@@ -37,8 +37,13 @@ header .title {
     margin-bottom: 20px;
 }
 
+@media (min-width:768px){
+    .logo-container {
+        margin-left: 170px;
+    }
+}
 
-@media (min-width:1023px) {
+@media (min-width:1440px) {
     .logo-container {
         margin-left: 500px;
     }
