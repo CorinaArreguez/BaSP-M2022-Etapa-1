@@ -1,0 +1,25 @@
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .social-media { 
+    margin-bottom: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.social-media a:not(:last-child) {
+    padding-right: 70px;
+}
+
+footer div:not(:first-child) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+footer .city {
+    padding-top: 10px;
+}
