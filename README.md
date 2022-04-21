@@ -17,6 +17,13 @@ Semana-04
 Semana-05
     exercises
     index.html
+Semana-06
+    javascript
+    styles
+    views
+        index.html
+        login.html
+        sign-up.html
 ```
 ### Semana-02
 We created an html document that has the same content as the first week's screenflow landing page and saved the progress in a public Github repository.
@@ -30,6 +37,10 @@ This week we created the landing page using flexbox as the main tool to do a Res
 ### Semana-05
 In the fifth week we solved javascript exercises and saved the progress in the repository.
 https://corinaarreguez.github.io/BaSP-M2022-Etapa-1/Semana-05/index.html
+
+### Semana-06
+We added the login and sign up screens to our web site and did the validations of the required fields.
+https://corinaarreguez.github.io/BaSP-M2022-Etapa-1/Semana-06/index.html
 
 _By Author_
 ```
