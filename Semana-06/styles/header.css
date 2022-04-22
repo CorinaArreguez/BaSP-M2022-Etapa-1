@@ -11,7 +11,7 @@ header {
 
 header .title {
     display: flex;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
 }
 
 .title img{
@@ -45,6 +45,6 @@ header .title {
 
 @media (min-width:1440px) {
     .logo-container {
-        margin-left: 500px;
+        margin-left: 800px;
     }
 }
