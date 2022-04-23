@@ -13,6 +13,8 @@ main {
 }
 
 main .sign-up {
+    width: 100%;
+    max-width: 350px;
     margin-top: 20px;
     margin-bottom: 20px;
     border: solid 1px;
@@ -23,9 +25,10 @@ main .sign-up {
     text-align: center;
 }
 
-.sign-up form {
-    margin-left: 45px;
+form .registration {
+    text-align: center;
 }
+
 .sign-up input {
     width: 100%;
     max-width: 250px;
@@ -38,6 +41,7 @@ main .sign-up {
 }
 
 .sign-up button {
+    margin-left: 40px;
     margin-top: 10px;
     margin-bottom: 15px;
     width: 100%;
@@ -54,10 +58,14 @@ main .sign-up {
         width: 100%;
         max-width: 1000px;
     }
+    .sign-up form {
+        margin-left: 40px;
+    }
     .sign-up input {
         width: 100%;
         max-width: 450px;
-        height: 30px;
+        height: 20px;
+        margin-bottom: 15px;
     }
     .sign-up button {
         width: 60%;
