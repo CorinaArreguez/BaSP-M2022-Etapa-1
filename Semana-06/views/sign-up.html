@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/Semana-06/styles/header.css">
     <link rel="stylesheet" href="/Semana-06/styles/sign-up.css">
     <link rel="stylesheet" href="/Semana-06/styles/footer.css">
+    <script src="/Semana-06/javascript/sign-up.js"></script>
     <title>Employee Signup</title>
 </head>
 <body>
@@ -31,81 +32,81 @@
                 <div class="registration">
                     <label for="name" class="reg-label">Name</label>
                     <div class="reg-input">
-                        <input type="text" name="name" placeholder="Name">
-                    </div>
-                    <p class="input-error">The name must contain more than 3 chars and can only contain letters</p>
+                        <input type="text" id="firstName" name="firstName" placeholder="Name">
+                        <div id="errorText"><p></p></div>
+                    </div>   
                 </div>
                 <div class="registration">
                     <label for="surname" class="reg-label">Surname</label>
                     <div class="reg-input">
-                        <input type="text" name="surname" placeholder="Surname">
+                        <input type="text" id="surname" name="surname" placeholder="Surname">
+                        <div id="errorText2"><p></p></div>
                     </div>
-                    <p class="input-error">The surname must contain more than 3 chars and can only contain letters</p>
                 </div>
                 <div class="registration">
                     <label for="dna" class="reg-label">DNA</label>
                     <div class="reg-input">
-                        <input type="number" name="dna" placeholder="DNA">
+                        <input type="number" id="dna" name="dna" placeholder="DNA">
+                        <div id="errorText3"><p></p></div>
                     </div>
-                    <p class="input-error">The DNA must contain more than 7 chars and can only contain numbers</p>
                 </div>
                 <div class="registration">
                     <label for="date-birth" class="reg-label">Date of Birth</label>
                     <div class="reg-input">
-                        <input type="date" name="date-birth" placeholder="Date of Birth">
+                        <input type="date" id="dateBirth" name="date-birth" placeholder="Date of Birth">
+                        <div id="errorText4"><p></p></div>
                     </div>
-                    <p class="input-error">The date of birth is wrong</p>
                 </div>
                 <div class="registration">
                     <label for="phone" class="reg-label">Phone</label>
                     <div class="reg-input">
-                        <input type="number" name="phone" placeholder="Phone">
+                        <input type="number" id="phone" name="phone" placeholder="Phone">
+                        <div id="errorText5"><p></p></div>
                     </div>
-                    <p class="input-error">The phone number must contain more than 10 chars and can only contain numbers</p>
                 </div>
                 <div class="registration">
                     <label for="adress" class="reg-label">Adress</label>
                     <div class="reg-input">
-                        <input type="adress" name="adress" placeholder="Adress">
+                        <input type="adress" id="adress" name="adress" placeholder="Adress">
+                        <div id="errorText6"><p></p></div>
                     </div>
-                    <p class="input-error">The adress must contain more than 5 chars and can only contain letters, numbers and a blank space in the middle</p>
                 </div>
                 <div class="registration">
                     <label for="city" class="reg-label">City</label>
                     <div class="reg-input">
-                        <input type="text" name="city" placeholder="City">
+                        <input type="text" id="city" name="city" placeholder="City">
+                        <div id="errorText7"><p></p></div>
                     </div>
-                    <p class="input-error">The city must contain more than 3 chars and can only contain alphanumeric text</p>
                 </div>
                 <div class="registration">
                     <label for="post-code" class="reg-label">Post code</label>
                     <div class="reg-input">
-                        <input type="number" name="post-code" placeholder="Post code">
+                        <input type="number" id="postCode" name="postCode" placeholder="Post code">
+                        <div id="errorText8"><p></p></div>
                     </div>
-                    <p class="input-error">The post code must contain 4 to 5 chars and can only contain numbers</p>
                 </div>
                 <div class="registration">
                     <label for="email" class="reg-label">Email</label>
                     <div class="reg-input">
-                        <input type="email" name="email" placeholder="Email">
+                        <input type="email" id="email" name="email" placeholder="Email">
+                        <div id="errorText9"><p></p></div>
                     </div>
-                    <p class="input-error">The email format must be valid</p>
                 </div>
                 <div class="registration">
                     <label for="password" class="reg-label">Password</label>
                     <div class="reg-input">
-                        <input type="password" name="password" placeholder="Paasword">
+                        <input type="password" id="password" name="password" placeholder="Paasword">
+                        <div id="errorText10"><p></p></div>
                     </div>
-                    <p class="input-error">The password must contain more than 7 chars and can only contain letters and numbers</p>
                 </div>
                 <div class="registration">
-                    <label for="repeat-password" class="reg-label">Repeat Password</label>
+                    <label for="repeat-password" id="repPass" class="reg-label">Repeat Password</label>
                     <div class="reg-input">
-                        <input type="password" name="repeat-password" placeholder="Repeat Password">
+                        <input type="password" name="repeatPassword" placeholder="Repeat Password">
+                        <div id="errorText11"><p></p></div>
                     </div>
-                    <p class="input-error">The password must contain more than 7 chars and can only contain letters and numbers</p>
                 </div>
-                <button>
+                <button id="continue">
                     Continue
                 </button>
             </form>
