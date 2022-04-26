@@ -15,8 +15,10 @@ main {
 main .sign-up {
     margin-top: 20px;
     margin-bottom: 20px;
+    width: 100%;
+    max-width: 350px;
     border: solid 1px;
-    border-radius: 50px;
+    border-radius: 50px; 
 }
 
 .sign-up h2 {
@@ -24,8 +26,10 @@ main .sign-up {
 }
 
 .sign-up form {
+    width: 100%;
+    max-width: 350px;
     align-items: center;
-    margin-left: 12px;
+    margin-left: 12px; 
 }
 .sign-up input {
     width: 100%;
@@ -35,13 +39,22 @@ main .sign-up {
     padding: 7px;
 }
 
-.sign-up div{
+.sign-up div:last-child {
     margin-bottom: 10px;
     width: 100%;
     max-width: 300px;
 }
 
 .sign-up div input {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 300px;
+}
+
+
+
+.sign-up .checkbox input {
     margin-top: 15px;
     margin-bottom: 15px;
     width: 100%;
@@ -74,10 +87,15 @@ main .sign-up {
     .sign-up input {
         width: 100%;
         max-width: 450px;
+        margin-left: 80px;
+    }
+    .sign-up .msg {
+        margin-left: 80px;
     }
     .sign-up button {
         width: 100%;
         max-width: 470px;
+        margin-left: 70px;
     }
 }
 
