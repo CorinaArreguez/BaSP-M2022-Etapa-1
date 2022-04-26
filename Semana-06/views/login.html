@@ -27,14 +27,20 @@
     <main>
         <section class="sign-up">
             <h2>Sign in</h2>
-            <form>
-                <input type="email" name="email" placeholder="Email">
-                <input type="password" name="password" placeholder="Password">
+            <form novalidate>
                 <div>
+                    <input type="email" id="email" name="email" placeholder="Email">
+                    <div id="errorText"><p class="msg"></p></div>
+                </div>
+                <div>
+                    <input type="password" id="password" name="password" placeholder="Password">
+                    <div id="errorText2"><p class="msg"></p></div>
+                </div>
+                <div class="checkbox">
                     <input type="checkbox" name="remember"> 
                     Remember me
                 </div>
-                <button>
+                <button id="continue">
                     Continue
                 </button> 
                 <button>
@@ -63,5 +69,6 @@
             <p>Copyright © 2022 Trackgenix SA. All rights reserved.</p>
         </div>
     </footer>
+    <script src="/Semana-06/javascript/login.js"></script>
 </body>
 </html>
