@@ -1,0 +1,40 @@
+body {
+    margin-left: 45px;
+    margin-right: 45px;
+    font-family: 'Roboto', sans-serif;
+    color: #373867;
+}
+
+body a {
+    text-decoration: none;
+    color: #373867;
+}
+
+main h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+@media (min-width:768px) {
+    body {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 1439px) {
+    nav {
+        display: none;
+    }
+}
+
+@media (min-width:1440px) {
+    body {
+        margin-left: 345px;
+    }
+    nav {
+        left: 0px;
+    }
+}
+

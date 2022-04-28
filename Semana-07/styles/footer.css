@@ -1,0 +1,24 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border-top: 5px solid #AACE9B;
+}
+
+footer .social-media { 
+    padding-top: 20px;
+    margin-bottom: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.social-media a:not(:last-child) {
+    padding-right: 70px;
+}
+
+footer div:not(:first-child) {
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+}
+
