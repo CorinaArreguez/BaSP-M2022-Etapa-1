@@ -16,8 +16,6 @@ window.onload = function () {
     password.addEventListener('blur', blurPassword);
     continueBtn.addEventListener('click', continueClick);
 
-    var eValue = document.getElementById('email').value;
-
     function blurEmail() {
         if (validateEmail()) {
             email.style.border = 'solid 3px #008000';
@@ -28,17 +26,17 @@ window.onload = function () {
             warning.style.color = '#FF0000';
             email.style.border = '3px solid  #FF0000';
             emailBool = false;
-        };
+        }
 
-    };
+    }
 
     function focusEmail () {
         var warning = document.getElementById('errorText');
         warning.firstElementChild.textContent = '';
-    };
+    }
 
     function blurPassword () {
-        if (validatePassword(document.getElementById('password').value)) {
+        if (validatePassword()) {
             password.style.border = 'solid 3px #008000';
             passwordBool = true;
         } else {
@@ -47,13 +45,13 @@ window.onload = function () {
             warning.style.color = '#FF0000';
             password.style.border = '3px solid  #FF0000';
             passwordBool = false;
-        };
-    };
+        }
+    }
 
     function focusPassword () {
         var warning = document.getElementById('errorText2');
         warning.firstElementChild.textContent = '';
-    };
+    }
     
     
     function validateEmail () {
@@ -66,14 +64,15 @@ window.onload = function () {
      
     }
 
-    function validatePassword(eValue) {
+    function validatePassword() {
         var numberBool = false;
         var spcharBool = false;
         var alphBool = false;
+        var pValue = document.getElementById('password').value
 
-        for (var c = 0; c < eValue.length; c++) {
+        for (var c = 0; c < pValue.length; c++) {
             for (let i = 0; i < spchar.length; i++) {
-                if (eValue [c] == spchar [i]) {
+                if (pValue [c] == spchar [i]) {
                     spcharBool = true;
                     break;
                 }
@@ -88,10 +87,10 @@ window.onload = function () {
             return false;
         }
 
-        for (var j = 0; j < eValue.length; j++) {
+        for (var j = 0; j < pValue.length; j++) {
             if (!numberBool) {
                 for (let k = 0; k < number.length; k++) {
-                    if (eValue [j] == number [k]) {
+                    if (pValue [j] == number [k]) {
                         numberBool = true;
                         break;
                     }
@@ -100,7 +99,7 @@ window.onload = function () {
 
             if (!alphBool) {
                 for (let a = 0; a < number.length; a++) {
-                    if (eValue [j] == alph [a]) {
+                    if (pValue [j] == alph [a]) {
                         alphBool = true;
                         break;
                     }
@@ -117,33 +116,39 @@ window.onload = function () {
         } else {
             return false;
         }
+     
     }
 
     function continueClick (e) {
         e.preventDefault ();
-        var msg = '';
-        var newMsg = `\r\n`;
-        msg = 'The data entered: ';
-
-        if (emailBool && passwordBool) {
-            msg += 'correct:' + newMsg + 'User email: ' + document.getElementById('email').value
+        var url = 'https://basp-m2022-api-rest-server.herokuapp.com/login?';
+        var queryParams = `email=${email.value}&password=${password.value}`;
+        fetch(`${url}${queryParams}`)
+        .then(res => res.json())
+        .then(json => {
+            var msgT = '';
+            var newMsg = `\r\n`;
+            msgT += json.msg 
+            + newMsg + 'User email: ' + document.getElementById('email').value
             + newMsg + 'Password: ' + document.getElementById('password').value;
-        } else {
-            msg += 'Incorrect. Check the next items; ';
-            if (!emailBool) {
-                msg += newMsg + 'Enter a valid email.';
-            }
-            if (!passwordBool) {
-                msg += newMsg + 'Enter a valid password.';
-            }
-        }
-
-        window.alert(msg); 
+            alert(msgT);
+        })
+        .catch( error => {
+            var msg = '';
+            var newMsg = `\r\n`;
+            msg <= error.errors[0].msg;
+            msg += '' 
+            + newMsg + 'User email: ' + document.getElementById('email').value
+            + newMsg + 'Password: ' + document.getElementById('password').value;
+            alert(msg)
+        })
+         
+        
     }
+}
 
-   
+
+    
 
 
-   
-};
 
