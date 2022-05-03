@@ -46,7 +46,6 @@ window.onload = function () {
     repPass.addEventListener('blur', blurRepPass);
     continueBtn.addEventListener('click', continueClick);
 
-    var eValue = document.getElementById('email').value;
 
     function blurFirstName() {
         if (validateFirstName()) {
@@ -220,7 +219,7 @@ window.onload = function () {
     };
 
     function blurPassword () {
-        if (validatePassword(document.getElementById('password').value)) {
+        if (validatePassword()) {
             password.style.border = 'solid 3px #008000';
             passwordBool = true;
         } else {
@@ -260,11 +259,13 @@ window.onload = function () {
     function validateFirstName () {
         var alphBool = false;
         var fnValue = document.getElementById('firstName').value;
-        for (alph of fnValue) {
-            if ((isNaN(alph) && (alph != '') && fnValue.length > 3)) {
-                alphBool = true;
-                break;
-            }; 
+        for (var i = 0; i < fnValue.length; i++) {
+            for (var j = 0; j < fnValue.length; j++) {
+                if (fnValue.length > 3 && fnValue[i] != spchar [j]) {
+                    alphBool = true;
+                    break;
+                }
+            }
         };
 
         if (alphBool) {
@@ -361,14 +362,11 @@ window.onload = function () {
         var alphBool = false;
         var ciValue = document.getElementById('city').value;
         for (var i = 0; i < ciValue.length; i++){
-            if (ciValue[i] == spchar) {
-                alphBool = false;
-            } else {
-                if (ciValue[i] == alph && ciValue.length > 3){
-                   alphBool = true;
-                   break; 
-                };
-            };
+            for (var j = 0; j < spchar.length; j++)
+            if (ciValue[i] != spchar[j]) {
+                alphBool = true;
+                break;
+            } 
         };
 
         if (alphBool) {
@@ -405,97 +403,150 @@ window.onload = function () {
      
     };
 
-    function validatePassword () {
-        var passVal = false;
-        var pass1 = document.getElementById('password').value;
-        if (pass1 !== '' && pass1.length > 7) {
-            passVal = true;
-        }    
+    function validatePassword() {
+        var numberBool = false;
+        var spcharBool = false;
+        var alphBool = false;
+        var pValue = document.getElementById('password').value;
 
-        if (passVal) {
-            return true;
-        } else {
-            return false;
-        };
-    };
+        for (var c = 0; c < pValue.length; c++) {
+            for (let i = 0; i < spchar.length; i++) {
+                if (pValue [c] == spchar [i]) {
+                    spcharBool = true;
+                    break;
+                }
+            }
 
-    
-    function validateRepPass () {
-        var pass1 = document.getElementById('password').value;
-        var pass2Val = false;
-        var pass2 = document.getElementById('repPass').value;
-        if (pass2 !== '' && pass2 == pass1) {
-            pass2Val = true;
-        } ;
-       
- 
-        if (pass2Val) {
-            return true;
-        } else {
-            return false;
-        };
-    };
-
-    function continueClick (e) {
-        e.preventDefault ();
-        var msg = '';
-        var newMsg = `\r\n`;
-        msg = 'The data entered: ';
-
-        if (firstNameBool && surnameBool && dnaBool && dateBirthBool && phoneBool && adressBool &&
-            cityBool && pcBool && emailBool && passwordBool && pass2Bool) {
-            msg += 'correct:' + 
-            newMsg + 'Name: ' + document.getElementById('firstName').value + 
-            newMsg + 'Surname: ' + document.getElementById('surname').value + 
-            newMsg + 'DNA: ' + document.getElementById('dna').value +
-            newMsg + 'Date of birth: ' + document.getElementById('dateBirth').value + 
-            newMsg + 'Phone: ' + document.getElementById('phone').value + 
-            newMsg + 'Adress: ' + document.getElementById('adress').value +
-            newMsg + 'City: ' + document.getElementById('ciry').value + 
-            newMsg + 'Post code: ' + document.getElementById('postCode').value + 
-            newMsg + 'User email: ' + document.getElementById('email').value + 
-            newMsg + 'Password: ' + document.getElementById('password').value
-            newMsg + 'Repeat password: ' + document.getElementById('repPass').value;
-        } else {
-            msg += 'Incorrect. Check the next items; ';
-            if (!firstNameBool) {
-                msg += newMsg + 'Enter a valid name.';
-            }
-            if (!surnameBool) {
-                msg += newMsg + 'Enter a valid surname.';
-            }
-            if (!dnaBool) {
-                msg += newMsg + 'Enter a valid dna.';
-            }
-            if (!dateBirthBool) {
-                msg += newMsg + 'Enter a valid date of birth.';
-            }
-            if (!phoneBool) {
-                msg += newMsg + 'Enter a valid phone.';
-            }
-            if (!adressBool) {
-                msg += newMsg + 'Enter a valid adress.';
-            }
-            if (!cityBool) {
-                msg += newMsg + 'Enter a valid city.';
-            }
-            if (!pcBool) {
-                msg += newMsg + 'Enter a valid post code.';
-            }
-            if (!emailBool) {
-                msg += newMsg + 'Enter a valid email.';
-            }
-            if (!passwordBool) {
-                msg += newMsg + 'Enter a valid password.';
-            }
-            if (!pass2Bool) {
-                msg += newMsg + 'The password is wrong.';
+            if (spcharBool) {
+                break;
             }
         }
 
-        window.alert(msg); 
+        if (spcharBool) {
+            return false;
+        }
+
+        for (var j = 0; j < pValue.length; j++) {
+            if (!numberBool) {
+                for (let k = 0; k < number.length; k++) {
+                    if (pValue [j] == number [k]) {
+                        numberBool = true;
+                        break;
+                    }
+                }
+            }
+
+            if (!alphBool) {
+                for (let a = 0; a < alph.length; a++) {
+                    if (pValue [j] == alph [a]) {
+                        alphBool = true;
+                        break;
+                    }
+                }
+            }
+
+            if (numberBool && alphBool) {
+                break;
+            }
+        }
+
+        if (numberBool && alphBool) {
+            return true;
+        } else {
+            return false;
+        }
+     
     }
-  
+
+    function validateRepPass () {
+        var pass1 = document.getElementById('repPass').value;
+        var pass2 = document.getElementById('password').value;
+        var valRepPass = false;
+        if (pass1 != '' && pass1 == pass2) {
+            valRepPass = true;
+        }
+
+        if (valRepPass) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    function validateAll () {
+        if (firstNameBool && surnameBool && dnaBool && dateBirthBool && phoneBool && 
+            adressBool && cityBool && pcBool && emailBool && passwordBool && pass2Bool) {
+            return true;
+        } 
+        
+    }
+
+    function formatDate(date) {
+        var dateArray = date.split('-');
+        return dateArray[1] + '/' + dateArray[2] + '/' + dateArray[0];
+    }
+
+    function respData (jsonResp) {
+        var msgD = '';
+        var successD = Object.entries(jsonResp.data);
+        console.log(successD);
+        for (var i = 1; i < successD.length; i++) {
+            msgD += '\n' + successD[i][0] + ': ' + successD[i][1];
+        }
+        return msgD;
+    }
+
+    
+    function continueClick (e) {
+        e.preventDefault ();
+        var url = `https://basp-m2022-api-rest-server.herokuapp.com/signup?name=${firstName.value}&lastName=${surname.value}&dni=${dna.value}&dob=${formatDate(dateBirth.value)}&phone=${phone.value}&address=${adress.value}&city=${city.value}&zip=${postCode.value}&email=${email.value}&password=${password.value}`;
+        if (validateAll()) {
+            fetch(url)
+            .then(resp => resp.json())
+            .then(jsonResp => {
+                if (jsonResp.success) {
+                    var msgs = jsonResp.msg;
+                    alert('' + msgs + '' + respData(jsonResp));
+                    localStorageSU();  
+                } else {
+                    var mesg = jsonResp.errors[0].msg;
+                    alert('' + mesg);
+                }
+                setValue();
+            })
+            
+            .catch(error => {
+                alert(error)
+            })
+        }   
+    }
+
+    function localStorageSU () {
+        localStorage.setItem('name', firstName.value);
+        localStorage.setItem('lastname', surname.value);
+        localStorage.setItem('dni', dna.value);
+        localStorage.setItem('dob', dateBirth.value);
+        localStorage.setItem('phone', phone.value);
+        localStorage.setItem('address', adress.value);
+        localStorage.setItem('city', city.value);
+        localStorage.setItem('zip', postCode.value);
+        localStorage.setItem('email', email.value);
+        localStorage.setItem('password', password.value);    
+    }
+
+    function setValue () {
+        firstName.setAttribute('value', localStorage.getItem('name'));
+        surname.setAttribute('value', localStorage.getItem('lastname'));
+        dna.setAttribute('value', localStorage.getItem('dni'));
+        dateBirth.setAttribute('value', localStorage.getItem('dob'));
+        phone.setAttribute('value', localStorage.getItem('phone'));
+        adress.setAttribute('value', localStorage.getItem('address'));
+        city.setAttribute('value', localStorage.getItem('city'));
+        postCode.setAttribute('value', localStorage.getItem('zip'));
+        email.setAttribute('value', localStorage.getItem('email'));
+        password.setAttribute('value', localStorage.getItem('password'));
+        repPass.setAttribute('value', localStorage.getItem('password'));
+    }
 }
 ;
 
